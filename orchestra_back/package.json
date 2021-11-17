@@ -1,0 +1,42 @@
+{
+  "name": "orchesta-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts:node": "ts-node src/index.ts",
+    "test": "cross-env NODE_ENV=test_local mocha --exit -r ts-node/register tests/**/*Test* --timeout 100000",
+    "start": "tsc && cross-env NODE_ENV=development_remote node build/src/swagger.js",
+    "dev_local": "cross-env NODE_ENV=development_local nodemon",
+    "dev": "cross-env NODE_ENV=development_remote nodemon",
+    "start-gendoc": "ts-node src/swagger.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^9.1.3",
+    "mongoose": "^5.13.3",
+    "swagger-autogen": "^2.12.6",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/chai": "^4.2.22",
+    "@types/chai-http": "^4.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mocha": "^9.0.0",
+    "@types/mongoose": "^5.11.97",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.3.5"
+  }
+}

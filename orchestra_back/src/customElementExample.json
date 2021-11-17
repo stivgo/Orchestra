@@ -1,0 +1,12 @@
+{
+    "name": "nombre del tipo de dato",
+    "description": "descripción del tipo de dato",
+    "fields": [{
+        "nombre": 
+        "description":
+        "dataType": string|number|boolean|Date|Optional
+        "defaultValue": 
+        "placeholder": 
+        "isRequired":
+    }]
+}
